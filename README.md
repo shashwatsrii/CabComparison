@@ -1,123 +1,71 @@
-# FastAPI Starter Application
 
-This is a basic FastAPI application to get you started with building APIs using the FastAPI framework. The app includes simple endpoints for demonstration purposes and provides interactive API documentation.
+# Getting Started with Create React App
 
-## Table of Contents
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-- [Overview](#overview)
-- [Features](#features)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Running the App](#running-the-app)
-- [API Endpoints](#api-endpoints)
-- [Interactive Documentation](#interactive-documentation)
-- [Project Structure](#project-structure)
-- [License](#license)
+## Available Scripts
 
-## Overview
+In the project directory, you can run:
 
-FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.7+ based on standard Python type hints.
+### `npm start`
 
-## Features
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- High performance, on par with Node.js and Go (thanks to Starlette and Pydantic).
-- Automatic interactive API documentation (Swagger UI and ReDoc).
-- Simple and intuitive request validation using Pydantic models.
-- Supports asynchronous programming for highly scalable applications.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Getting Started
+### `npm test`
 
-### Prerequisites
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- Python 3.7 or higher
-- Virtual environment tool (recommended)
-- Pip (Python package installer)
+### `npm run build`
 
-### Installation
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-1. **Clone the repository:**
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-    ```bash
-    git clone https://github.com/shashwatsrii/CabComparison.git
-    cd CabComparison
-    ```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-2. **Create and activate a virtual environment:**
+### `npm run eject`
 
-    ```bash
-    # On Windows
-    python -m venv venv
-    .\venv\Scripts\activate
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-    # On Unix or MacOS
-    python3 -m venv venv
-    source venv/bin/activate
-    ```
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-3. **Install dependencies:**
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### Running the App
+## Learn More
 
-1. **Start the FastAPI app with Uvicorn:**
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-    ```bash
-    uvicorn main:app --reload
-    ```
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-2. **Access the app:**
+### Code Splitting
 
-    Open your browser and navigate to `http://127.0.0.1:8000` to see the "Hello, FastAPI!" message.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-## API Endpoints
+### Analyzing the Bundle Size
 
-- **GET /**: Returns a welcome message.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-    ```json
-    GET / HTTP/1.1
-    Host: 127.0.0.1:8000
-    ```
+### Making a Progressive Web App
 
-    Response:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-    ```json
-    {
-        "message": "Hello, FastAPI!"
-    }
-    ```
+### Advanced Configuration
 
-- **GET /items/{item_id}**: Fetches item details based on the provided item ID.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-    Example request:
+### Deployment
 
-    ```json
-    GET /items/1?q=example HTTP/1.1
-    Host: 127.0.0.1:8000
-    ```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-    Response:
+### `npm run build` fails to minify
 
-    ```json
-    {
-        "item_id": 1,
-        "q": "example"
-    }
-    ```
-
-## Interactive Documentation
-
-FastAPI provides automatically generated interactive API documentation.
-
-- **Swagger UI**: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
-- **ReDoc**: [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
-
-These can be used to test API endpoints directly from the browser.
-
-## Project Structure
-
-Here's an overview of the project structure:
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

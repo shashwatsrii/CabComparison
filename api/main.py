@@ -1,13 +1,17 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+from starlette.middleware.cors import CORSMiddleware
 
-# Create a FastAPI instance
+
 app = FastAPI()
 
-# Define a basic route
-@app.get("/")
-def read_root():
-    return {"message": "Welcome to Cab Compare!"}
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  
+    allow_credentials=True,
+    allow_methods=["*"],  
+    allow_headers=["*"],  
+)
 
 
 class Item(BaseModel):
